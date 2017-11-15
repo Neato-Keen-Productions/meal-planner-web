@@ -1,0 +1,13 @@
+<form class="example-form">
+	<mat-form-field class="example-full-width"> 
+		<input matInput [(ngModel)]="username" name="username" placeholder="Username"> 
+	</mat-form-field>
+
+	<mat-form-field class="example-full-width"> 
+		<input matInput type="password" [(ngModel)]="password" name="password" placeholder="Password">
+	</mat-form-field>
+</form>
+<div mat-dialog-actions>
+	<button mat-button (click)="submit()">Sign In</button>
+	<button mat-button (click)="onNoClick()" tabindex="-1">Cancel</button>
+</div>
