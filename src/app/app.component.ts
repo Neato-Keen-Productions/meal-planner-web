@@ -47,7 +47,7 @@ export class LoginComponent {
     const headers =  new HttpHeaders().set('Content-Type', 'application/json');
 
     this.http
-      .post('http://localhost:8080/login', request_data, { 'headers': headers })
+      .post('http://127.0.0.1:8080/token', request_data, { 'headers': headers, withCredentials: true })
       .subscribe(data => {
         console.log(data);
       }, err => {
